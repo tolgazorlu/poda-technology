@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 <a href="https://dapper-fox-dea6e6.netlify.app/">https://dapper-fox-dea6e6.netlify.app/</a>
 
+![](https://github.com/tolgazorlu/poda-technology/blob/main/poda.gif)
+
 ## Getting Started
 
 First, run the development server:
