@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube, AiFillInstagram } from 'react-icons/ai';
 import { MdDarkMode } from 'react-icons/md'
 import { useState } from 'react';
-import chart from '../public/chart.png';
+import bgIndigo from '../public/blur-indigo.png';
+import bgBlur from '../public/blur-cyan.png'
 import Image from 'next/image';
 
 export default function Home() {
@@ -23,16 +23,20 @@ export default function Home() {
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons dark:text-white">podatech</h1>
             <ul className="flex items-center">
-              <li><a href="#" className="px-4 py-2 rounded-md ml-8">SkillShare</a></li>
-              <li><a href="#" className="px-4 py-2 rounded-md">UniPubs</a></li>
-              <li><a href="#" className="bg-gradient-to-r from-orange-500 to-teal-500 text-white px-4 py-2 rounded-md ml-4">Poda Blog</a></li>
+              <li><a href="#" className="px-4 py-2 rounded-md ml-8 dark:text-white">SkillShare</a></li>
+              <li><a href="#" className="px-4 py-2 rounded-md dark:text-white">UniPubs</a></li>
+              <li><a href="#" className="bg-gradient-to-r from-blue to-cyan-500 text-white px-4 py-2 rounded-md ml-4">Poda Blog</a></li>
               <li><MdDarkMode onClick={() => { setDarkMode('darkMode') }} className="cursor-pointer text-2xl dark:text-white ml-8" /></li>
             </ul>
           </nav>
-          <div className="flex justify-center">
+          <div className="h-0">
+          <Image src={bgBlur} className=""/>
+          <Image src={bgIndigo} className="relative"/>
+          </div>
+          <div className="flex justify-center z-1">
             <div>
               <div className="text-center p-10">
-                <h2 className="text-5xl py-2 text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-cyan-600 font-medium">Population Data</h2>
+                <h2 className="text-5xl py-2 text-transparent bg-clip-text bg-blue font-medium">Population Data</h2>
                 <h3 className="text-2xl py-2 dark:text-white">Data Visualization, Machine Learning and more...</h3>
                 <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-300">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -47,22 +51,22 @@ export default function Home() {
             </div>
             <div className="inline-flex items-center">
               <div className="flex gap-2">
-                <div className='w-20 h-10 bg-gradient-to-r from-blue-500 to-teal-500 rounded-md animate-shake1 relative flex justify-center items-center'>
+                <div className='w-20 h-10 bg-blue rounded-md animate-shake1 relative flex justify-center items-center'>
                   <h1 className="text-white">0</h1>
                 </div>
-                <div className='w-20 h-10 bg-gradient-to-r from-teal-500 to-pink-500 rounded-md animate-shake2 relative flex justify-center items-center'>
+                <div className='w-20 h-10 bg-blue rounded-md animate-shake2 relative flex justify-center items-center'>
                   <h1 className="text-white">1</h1>
                 </div>
-                <div className='w-20 h-10 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md animate-shake1 relative flex justify-center items-center'>
+                <div className='w-20 h-10 bg-blue rounded-md animate-shake1 relative flex justify-center items-center'>
                   <h1 className="text-white">0</h1>
                 </div>
-                <div className='w-20 h-10 bg-gradient-to-r from-yellow-500 to-teal-500 rounded-md animate-shake2 relative flex justify-center items-center'>
+                <div className='w-20 h-10 bg-blue rounded-md animate-shake2 relative flex justify-center items-center'>
                   <h1 className="text-white">1</h1>
                 </div>
-                <div className='w-20 h-10 bg-gradient-to-r from-teal-500 to-gray-500 rounded-md animate-shake1 relative flex justify-center items-center'>
+                <div className='w-20 h-10 bg-blue rounded-md animate-shake1 relative flex justify-center items-center'>
                   <h1 className="text-white">0</h1>
                 </div>
-                <div className='w-20 h-10 bg-gradient-to-r from-gray-500 to-black rounded-md animate-shake2 relative flex justify-center items-center'>
+                <div className='w-20 h-10 bg-blue rounded-md animate-shake2 relative flex justify-center items-center'>
                   <h1 className="text-white">1</h1>
                 </div>
               </div>

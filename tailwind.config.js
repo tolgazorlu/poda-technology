@@ -6,6 +6,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors:{
+        blue: "#19a9e9",
+        darkBlue: "#0f172a",
+        pink: "#a35687",
+      },
       fontFamily: {
         burtons: "burtons",
       },
