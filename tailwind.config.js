@@ -13,6 +13,7 @@ module.exports = {
       },
       fontFamily: {
         burtons: "burtons",
+        poppins: "Poppins"
       },
       animation: {
         shake1: "shake1 3s infinite ease-in-out",

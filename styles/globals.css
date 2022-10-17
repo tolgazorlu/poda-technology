@@ -23,12 +23,3 @@ a {
   font-family: "burtons";
   src: url("../public/Burtons.otf");
 }
-
-.main-container{
-  scroll-snap-type: y mandatory;
-}
-
-.page1{
-  height: 100vh;
-  scroll-snap-align: start;
-}

@@ -2,9 +2,6 @@ import Head from 'next/head';
 import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube, AiFillInstagram } from 'react-icons/ai';
 import { MdDarkMode } from 'react-icons/md'
 import { useState } from 'react';
-import bgIndigo from '../public/blur-indigo.png';
-import bgBlur from '../public/blur-cyan.png'
-import Image from 'next/image';
 
 export default function Home() {
 
@@ -18,25 +15,23 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 main-container">
-        <section className="min-h-screen page1">
+      <main className="font-poppins bg-white px-5 md:px-10 lg:px-40 dark:bg-gray-900 main-container">
+        <section className="">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons dark:text-white">podatech</h1>
             <ul className="flex items-center">
-              <li><a href="#" className="px-4 py-2 rounded-md ml-8 dark:text-white">SkillShare</a></li>
-              <li><a href="#" className="px-4 py-2 rounded-md dark:text-white">UniPubs</a></li>
-              <li><a href="#" className="bg-gradient-to-r from-blue to-cyan-500 text-white px-4 py-2 rounded-md ml-4">Poda Blog</a></li>
-              <li><MdDarkMode onClick={() => { setDarkMode('darkMode') }} className="cursor-pointer text-2xl dark:text-white ml-8" /></li>
+              <li><a href="#" className="px-4  rounded-md ml-8 dark:text-white">SkillShare</a></li>
+              <li><a href="#" className="px-4  rounded-md dark:text-white">UniPubs</a></li>
+              <li><a href="#" className="flex bg-cyan-500 text-white px-4 rounded-md ml-4"><span>Blog</span></a></li>
+              <li><MdDarkMode onClick={() => { setDarkMode('darkMode') }} className="cursor-pointer text-2xl text-darkBlue dark:text-cyan-500 ml-8" /></li>
             </ul>
           </nav>
           <div className="h-0">
-          <Image src={bgBlur} className=""/>
-          <Image src={bgIndigo} className="relative"/>
           </div>
           <div className="flex justify-center z-1">
             <div>
               <div className="text-center p-10">
-                <h2 className="text-5xl py-2 text-transparent bg-clip-text bg-blue font-medium">Population Data</h2>
+                <h2 className="text-5xl py-2 text-transparent bg-clip-text font-medium bg-gradient-to-r from-cyan-500 to-cyan-500">Population Data</h2>
                 <h3 className="text-2xl py-2 dark:text-white">Data Visualization, Machine Learning and more...</h3>
                 <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-300">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -49,32 +44,130 @@ export default function Home() {
                 <AiFillYoutube />
               </div>
             </div>
-            <div className="inline-flex items-center">
+            <div className="items-center hidden xl:flex">
               <div className="flex gap-2">
-                <div className='w-20 h-10 bg-blue rounded-md animate-shake1 relative flex justify-center items-center'>
+                <div className='w-20 h-10 bg-cyan-500 rounded-md animate-shake1 relative flex justify-center items-center'>
                   <h1 className="text-white">0</h1>
                 </div>
-                <div className='w-20 h-10 bg-blue rounded-md animate-shake2 relative flex justify-center items-center'>
+                <div className='w-20 h-10 bg-cyan-500 rounded-md animate-shake2 relative flex justify-center items-center'>
                   <h1 className="text-white">1</h1>
                 </div>
-                <div className='w-20 h-10 bg-blue rounded-md animate-shake1 relative flex justify-center items-center'>
+                <div className='w-20 h-10 bg-cyan-500 rounded-md animate-shake1 relative flex justify-center items-center'>
                   <h1 className="text-white">0</h1>
                 </div>
-                <div className='w-20 h-10 bg-blue rounded-md animate-shake2 relative flex justify-center items-center'>
+                <div className='w-20 h-10 bg-cyan-500 rounded-md animate-shake2 relative flex justify-center items-center'>
                   <h1 className="text-white">1</h1>
                 </div>
-                <div className='w-20 h-10 bg-blue rounded-md animate-shake1 relative flex justify-center items-center'>
+                <div className='w-20 h-10 bg-cyan-500 rounded-md animate-shake1 relative flex justify-center items-center'>
                   <h1 className="text-white">0</h1>
                 </div>
-                <div className='w-20 h-10 bg-blue rounded-md animate-shake2 relative flex justify-center items-center'>
+                <div className='w-20 h-10 bg-cyan-500 rounded-md animate-shake2 relative flex justify-center items-center'>
                   <h1 className="text-white">1</h1>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section className="page2 flex justify-center">
 
+        <section className="h-full py-14 flex justify-center">
+
+          <div className="py-14 px-14 h-full w-full">
+
+            <div>
+              <div className="text-4xl font-semibold dark:text-white">
+                <h1>Frequently asked questions</h1>
+              </div>
+              <div className="mt-4 dark:text-gray-300">
+                <p>If you can’t find what you’re looking for, email our support team and if you’re lucky someone will get back to you.</p>
+              </div>
+            </div>
+
+
+            <div className="flex flex-col md:flex-row">
+              <div className="mt-14 dark:text-white">
+                <div>
+                  <div className="font-semibold">
+                    <h3>Does TaxPal handle VAT?</h3>
+                  </div>
+                  <div className="mt-4 dark:text-gray-300">
+                    <p>Well no, but if you move your company offshore you can probably ignore it.</p>
+                  </div>
+                </div>
+                <div>
+                  <div className="mt-8 font-semibold">
+                    <h3>Can I pay for my subscription via purchase order?</h3>
+                  </div>
+                  <div className="mt-4 dark:text-gray-300">
+                    <p>Absolutely, we are happy to take your money in all forms.</p>
+                  </div>
+                </div>
+                <div>
+                  <div className="mt-8 font-semibold">
+                    <h3>How do I apply for a job at TaxPal?</h3>
+                  </div>
+                  <div className="mt-4 dark:text-gray-300">
+                    <p>We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-14 m-2 dark:text-white">
+                <div>
+                  <div className="font-semibold">
+                    <h3>What was that testimonial about tax fraud all about?</h3>
+                  </div>
+                  <div className="mt-4 dark:text-gray-300">
+                    <p>TaxPal is just a software application, ultimately your books are your responsibility.</p>
+                  </div>
+                </div>
+                <div>
+                  <div className="mt-8 font-semibold">
+                    <h3>TaxPal sounds horrible but why do I still feel compelled to purchase?</h3>
+                  </div>
+                  <div className="mt-4 dark:text-gray-300">
+                    <p>This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.</p>
+                  </div>
+                </div>
+                <div>
+                  <div className="mt-8 font-semibold">
+                    <h3>I found other companies called TaxPal, are you sure you can use this name?</h3>
+                  </div>
+                  <div className="mt-4 dark:text-gray-300">
+                    <p>Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-14 dark:text-white">
+                <div>
+                  <div className="font-semibold">
+                    <h3>How do you generate reports?</h3>
+                  </div>
+                  <div className="mt-4 dark:text-gray-300">
+                    <p>You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.</p>
+                  </div>
+                </div>
+                <div>
+                  <div className="mt-8 font-semibold">
+                    <h3>Can we expect more inventory features?</h3>
+                  </div>
+                  <div className="mt-4 dark:text-gray-300">
+                    <p>Absolutely, we are happy to take your money in all forms.</p>
+                  </div>
+                </div>
+                <div>
+                  <div className="mt-8 font-semibold">
+                    <h3>I lost my password, how do I get into my account?</h3>
+                  </div>
+                  <div className="mt-4 dark:text-gray-300">
+                    <p>Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
         </section>
       </main>
 
