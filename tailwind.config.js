@@ -6,8 +6,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors:{
+        blue: "#19a9e9",
+        darkBlue: "#0f172a",
+        pink: "#a35687",
+      },
       fontFamily: {
         burtons: "burtons",
+        poppins: "Poppins"
       },
       animation: {
         shake1: "shake1 3s infinite ease-in-out",
